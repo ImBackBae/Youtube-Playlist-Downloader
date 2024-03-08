@@ -3,7 +3,7 @@ import os
 from pytube import YouTube
 id = input("Enter your playlist id: ")
 id = id[id.index("list=") + 5: id.index("list=") + 39]
-api_key = 'AIzaSyCL0n22RuQSq1vXZ5-T9_YJnkWARh_0n-4'
+api_key = 'PUT YOUR API HERE'
 youtube = googleapiclient.discovery.build('youtube', 'v3', developerKey=api_key)
 
 des = os.getcwd() + "\playlist"
